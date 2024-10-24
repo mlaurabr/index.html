@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quer namorar comigo?</h1>
+        <div class="resposta">
+            <button id="sim" onclick="respostaSim()">Sim</button>
+            <button id="nao" onclick="respostaNao()">Não</button>
+        </div>
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.resposta {
+    margin-top: 20px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+#mensagem {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+function respostaSim() {
+    document.getElementById("mensagem").innerHTML = "AAEEEEEE! Eu te amo.";
+}
+
+function respostaNao() {
+    document.getElementById("mensagem").innerHTML = "Voltee, vai aceitar SIMM!";
+}
